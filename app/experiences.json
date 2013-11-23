@@ -1,0 +1,24 @@
+[
+  {
+    "type": "Work Experience",
+    "items": [
+      {
+        "company": "Company 1",
+        "title": "Software Developer",
+        "period": {
+          "start": "2009",
+          "end": "2013"
+        },
+        "description": "Bacon ipsum dolor sit amet fatback beef kielbasa sausage meatball ball tip spare ribs venison swine flank ground round. Brisket ground round biltong venison tri-tip, shank salami. Fatback pork loin shoulder chuck. Bacon sirloin beef ribs corned beef bresaola strip steak. Andouille filet mignon turducken prosciutto pastrami frankfurter beef. Andouille shank prosciutto, fatback filet mignon ribeye tri-tip. Ball tip cow rump meatloaf tri-tip beef ribs flank swine ham hock"
+      }
+    ]
+  },
+  {
+    "type": "Education",
+    "items": []
+  },
+  {
+    "type": "Projects",
+    "items": []
+  }
+]

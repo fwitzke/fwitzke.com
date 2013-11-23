@@ -18,7 +18,7 @@
     <script src="bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
   </head>
-  <body>
+  <body ng-app="witzke">
     <!--[if lt IE 10]>
         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -29,7 +29,7 @@
     <!-- endbower -->
     <!-- endbuild -->
 
-    <div class="pure-g-r" id="layout">
+    <div class="pure-g-r" id="layout" ng-controller="ExperienceCtrl">
       <div class="sidebar pure-u">
         <header class="header">
           <hgroup>
@@ -49,40 +49,22 @@
           </nav>
         </header>
       </div>
-
       <div class="pure-u-1">
         <div class="content">
 
-          <div class="posts">
-            <h1 class="content-subhead">Work Experience</h1>
+          <div class="posts" ng-repeat="exp in experiences">
+            <h1 class="content-subhead">{{exp.type}}</h1>
 
             <!-- A single blog post -->
-            <section class="post">
+            <section class="post" ng-repeat="item in exp.items">
               <header class="post-header">
                 <img class="post-avatar" alt="alt for image" height="48" width="48" src="http://placehold.it/48x48">
-                <h2 class="post-title">Company 1</h2>
-                <p class="post-meta">2009-2013</p>
+                <h2 class="post-title">{{item.company}}</h2>
+                <p class="post-meta">{{item.period|period}}</p>
               </header>
 
               <div class="post-description">
-                <p>Bacon ipsum dolor sit amet fatback beef kielbasa sausage meatball ball tip spare ribs venison swine flank ground round. Brisket ground round biltong venison tri-tip, shank salami. Fatback pork loin shoulder chuck. Bacon sirloin beef ribs corned beef bresaola strip steak. Andouille filet mignon turducken prosciutto pastrami frankfurter beef. Andouille shank prosciutto, fatback filet mignon ribeye tri-tip. Ball tip cow rump meatloaf tri-tip beef ribs flank swine ham hock.</p>
-              </div>
-            </section>
-          </div>
-
-          <div class="posts">
-            <h1 class="content-subhead">Education</h1>
-
-            <!-- A single blog post -->
-            <section class="post">
-              <header class="post-header">
-                <img class="post-avatar" alt="alt for image" height="48" width="48" src="http://placehold.it/48x48">
-                <h2 class="post-title">Company 1</h2>
-                <p class="post-meta">2009-2013</p>
-              </header>
-
-              <div class="post-description">
-                <p>Bacon ipsum dolor sit amet fatback beef kielbasa sausage meatball ball tip spare ribs venison swine flank ground round. Brisket ground round biltong venison tri-tip, shank salami. Fatback pork loin shoulder chuck. Bacon sirloin beef ribs corned beef bresaola strip steak. Andouille filet mignon turducken prosciutto pastrami frankfurter beef. Andouille shank prosciutto, fatback filet mignon ribeye tri-tip. Ball tip cow rump meatloaf tri-tip beef ribs flank swine ham hock.</p>
+                <p>{{item.description}}</p>
               </div>
             </section>
           </div>
@@ -110,6 +92,7 @@
       ga('create','UA-XXXXX-X');ga('send','pageview');
     </script>
 
+    <script src="bower_components/angular/angular.min.js"></script>
     <!-- build:js scripts/main.js -->
     <script src="scripts/main.js"></script>
     <!-- endbuild -->
