@@ -79,7 +79,8 @@
 
             <section class="experience" ng-repeat="item in exp.items">
               <header>
-                <img class="avatar" ng-if="item.image" height="48" width="48" ng-src="{{item.image}}">
+                <div class="avatar" ng-if="item.avatar" ng-class="item.avatar"></div>
+                <div class="image" ng-if="item.image" ng-class="item.image"></div>
                 <h2>{{item.company}}</h2>
                 <h3>{{item.title}}</h3>
                 <p class="meta">{{item.period|period}} | {{item.location}}</p>

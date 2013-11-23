@@ -8,6 +8,7 @@
           "start": "December 2012",
           "end": "February 2013"
         },
+        "image": "reclamacoesbr",
         "location": "Porto Alegre, Brazil",
         "description": "An open source Brazilian customer complaint data visualisation website that gathers and presents information in a relevant context and a clear way. Second place at the First Brazilian Justice Ministry Open Data Application Contest."
       },
@@ -17,6 +18,7 @@
           "start": "September 2013",
           "end": "October 2013"
         },
+        "image": "rodoviasbr",
         "location": "Porto Alegre, Brazil",
         "description": "An open source Brazilian road accidents data visualisation website that gathers and presents information on accidents and fatalities in the Brazilian roads displaying total by state and by road, including causes of the accidents and a heat maps highlighting the most violent roads and states. All data provided by the Ministry of Justice and the Federal Highway Police."
       }
@@ -32,7 +34,7 @@
           "start": "October 2011",
           "end": "Present"
         },
-        "image": "http://placehold.it/48x48",
+        "avatar": "tw",
         "location": "Porto Alegre, Brazil",
         "description": "Java Web application development. Working mainly with US based clients in an agile environment with distributed teams. Technologies: Java (Spring, Ibatis, JMS, JUnit, JMock, Mockito), Ruby (RSpec, Watir, Taza, Cucumber), Javascript, HTML/CSS, Oracle Database, Apache Solr, CruiseControl CI, Jenkins CI and others."
       },
@@ -43,7 +45,7 @@
           "start": "July 2010",
           "end": "October 2011"
         },
-        "image": "http://placehold.it/48x48",
+        "avatar": "dell",
         "location": "Porto Alegre, Brazil",
         "description": "WebServices development in a Service-Oriented Architecture platform. Technologies: Java, SOA, SQL, Oracle Service Bus, BPEL, BPMN"
       },
@@ -54,7 +56,7 @@
           "start": "August 2008",
           "end": "July 2010"
         },
-        "image": "http://placehold.it/48x48",
+        "avatar": "pucrs",
         "location": "Porto Alegre, Brazil",
         "description": "Development and maintenance of web applications using Java Servlets/JSP and other Java frameworks. Technologies: Java, SQL, JavaScript, HTML, CSS, Oracle Database, UML"
       }
@@ -70,7 +72,7 @@
           "start": "March 2006",
           "end": "December 2010"
         },
-        "image": "http://placehold.it/48x48",
+        "avatar": "pucrs",
         "location": "Porto Alegre, Brazil"
       }
     ]

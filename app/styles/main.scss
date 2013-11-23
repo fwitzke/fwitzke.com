@@ -95,9 +95,38 @@ a {
   padding-bottom: 2em;
 
   .avatar {
-    border-radius: 50px;
+    width: 100px;
+    height: 60px;
     float: right;
     margin-left: 1em;
+    &.pucrs {
+      background: url(/images/pucrs.png) no-repeat top right;
+      background-size: 100px auto;
+    }
+    &.dell {
+      background: url(/images/dell.png) no-repeat top right;
+      background-size: 60px 60px;
+    }
+    &.tw {
+      background: url(/images/tw.png) no-repeat top right;
+      background-size: 100px auto;
+    }
+  }
+
+  .image {
+    width: 200px;
+    height: 200px;
+    float: left;
+    margin-right: 1em;
+    box-shadow: 2px 2px #40aabf;
+    &.reclamacoesbr {
+      background: url(/images/reclamacoesbr.png) no-repeat;  
+      background-size: 200px 200px;
+    }
+    &.rodoviasbr {
+      background: url(/images/rodoviasbr.png) no-repeat;  
+      background-size: 200px 200px;
+    }
   }
 
   .description {
