@@ -7,34 +7,72 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>fwitzke</title>
-    <meta name="description" content="">
+    <meta name="description" content="Fernando Witzke's personal website">
     <meta name="viewport" content="width=device-width">
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-    <link rel="stylesheet" href="styles/300047f3.main.css"/>
+
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.3.0/pure-min.css">
+    <link rel="stylesheet" href="styles/3b23ff50.main.css"/>
     <script src="scripts/vendor/d7100892.modernizr.js"></script>
   </head>
-  <body>
+  <body ng-app="witzke">
     <!--[if lt IE 10]>
         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <div class="container">
-      <header class="header">
-        <ul class="nav nav-pills pull-right">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-        <h3 class="text-muted">fwitzke</h3>
-      </header>
-
-
-      <footer class="footer">
-        <p>Built with ♥ in Porto Alegre</p>
-      </footer>
-    </div>
-
     <script src="scripts/dbd26eaf.vendor.js"></script>
+
+    <div class="pure-g-r" id="layout" ng-controller="ExperienceCtrl">
+      <div class="sidebar pure-u">
+        <header class="header">
+          <hgroup>
+            <h1 class="brand-title">Fernando Witzke</h1>
+            <h2 class="brand-tagline">Software Developer</h2>
+          </hgroup>
+
+          <nav class="nav">
+            <ul class="nav-list">
+              <li class="nav-item">
+                <a class="pure-button" href="http://purecss.io">Pure</a>
+              </li>
+              <li class="nav-item">
+                <a class="pure-button" href="http://yuilibrary.com">YUI Library</a>
+              </li>
+            </ul>
+          </nav>
+        </header>
+      </div>
+      <div class="pure-u-1">
+        <div class="content">
+
+          <div class="posts" ng-repeat="exp in experiences">
+            <h1 class="content-subhead">{{exp.type}}</h1>
+
+            <!-- A single blog post -->
+            <section class="post" ng-repeat="item in exp.items">
+              <header class="post-header">
+                <img class="post-avatar" alt="alt for image" height="48" width="48" src="http://placehold.it/48x48">
+                <h2 class="post-title">{{item.company}}</h2>
+                <p class="post-meta">{{item.period|period}}</p>
+              </header>
+
+              <div class="post-description">
+                <p>{{item.description}}</p>
+              </div>
+            </section>
+          </div>
+
+          <footer class="footer">
+            <div class="pure-menu pure-menu-horizontal pure-menu-open">
+              <ul>
+                <li><a href="http://purecss.io/">About</a></li>
+                <li><a href="http://twitter.com/yuilibrary/">Twitter</a></li>
+                <li><a href="http://github.com/yui/pure/">Github</a></li>
+              </ul>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
@@ -46,8 +84,9 @@
       ga('create','UA-XXXXX-X');ga('send','pageview');
     </script>
 
-    <script src="scripts/b6c3df09.main.js"></script>
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="scripts/5bfd1169.main.js"></script>
 
-    <script src="scripts/20bdd8fe.plugins.js"></script>
+    <script src="scripts/d41d8cd9.plugins.js"></script>
 </body>
 </html>
