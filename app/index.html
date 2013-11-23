@@ -7,9 +7,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>fwitzke</title>
-    <meta name="description" content="">
+    <meta name="description" content="Fernando Witzke's personal website">
     <meta name="viewport" content="width=device-width">
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.3.0/pure-min.css">
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
@@ -22,27 +23,82 @@
         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <div class="container">
-      <header class="header">
-        <ul class="nav nav-pills pull-right">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-        <h3 class="text-muted">fwitzke</h3>
-      </header>
-
-
-      <footer class="footer">
-        <p>Built with ♥ in Porto Alegre</p>
-      </footer>
-    </div>
-
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="bower_components/jquery/jquery.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
+
+    <div class="pure-g-r" id="layout">
+      <div class="sidebar pure-u">
+        <header class="header">
+          <hgroup>
+            <h1 class="brand-title">Fernando Witzke</h1>
+            <h2 class="brand-tagline">Software Developer</h2>
+          </hgroup>
+
+          <nav class="nav">
+            <ul class="nav-list">
+              <li class="nav-item">
+                <a class="pure-button" href="http://purecss.io">Pure</a>
+              </li>
+              <li class="nav-item">
+                <a class="pure-button" href="http://yuilibrary.com">YUI Library</a>
+              </li>
+            </ul>
+          </nav>
+        </header>
+      </div>
+
+      <div class="pure-u-1">
+        <div class="content">
+
+          <div class="posts">
+            <h1 class="content-subhead">Work Experience</h1>
+
+            <!-- A single blog post -->
+            <section class="post">
+              <header class="post-header">
+                <img class="post-avatar" alt="alt for image" height="48" width="48" src="http://placehold.it/48x48">
+                <h2 class="post-title">Company 1</h2>
+                <p class="post-meta">2009-2013</p>
+              </header>
+
+              <div class="post-description">
+                <p>Bacon ipsum dolor sit amet fatback beef kielbasa sausage meatball ball tip spare ribs venison swine flank ground round. Brisket ground round biltong venison tri-tip, shank salami. Fatback pork loin shoulder chuck. Bacon sirloin beef ribs corned beef bresaola strip steak. Andouille filet mignon turducken prosciutto pastrami frankfurter beef. Andouille shank prosciutto, fatback filet mignon ribeye tri-tip. Ball tip cow rump meatloaf tri-tip beef ribs flank swine ham hock.</p>
+              </div>
+            </section>
+          </div>
+
+          <div class="posts">
+            <h1 class="content-subhead">Education</h1>
+
+            <!-- A single blog post -->
+            <section class="post">
+              <header class="post-header">
+                <img class="post-avatar" alt="alt for image" height="48" width="48" src="http://placehold.it/48x48">
+                <h2 class="post-title">Company 1</h2>
+                <p class="post-meta">2009-2013</p>
+              </header>
+
+              <div class="post-description">
+                <p>Bacon ipsum dolor sit amet fatback beef kielbasa sausage meatball ball tip spare ribs venison swine flank ground round. Brisket ground round biltong venison tri-tip, shank salami. Fatback pork loin shoulder chuck. Bacon sirloin beef ribs corned beef bresaola strip steak. Andouille filet mignon turducken prosciutto pastrami frankfurter beef. Andouille shank prosciutto, fatback filet mignon ribeye tri-tip. Ball tip cow rump meatloaf tri-tip beef ribs flank swine ham hock.</p>
+              </div>
+            </section>
+          </div>
+
+          <footer class="footer">
+            <div class="pure-menu pure-menu-horizontal pure-menu-open">
+              <ul>
+                <li><a href="http://purecss.io/">About</a></li>
+                <li><a href="http://twitter.com/yuilibrary/">Twitter</a></li>
+                <li><a href="http://github.com/yui/pure/">Github</a></li>
+              </ul>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
@@ -59,18 +115,6 @@
     <!-- endbuild -->
 
     <!-- build:js scripts/plugins.js -->
-    <script src="bower_components/sass-bootstrap/js/affix.js"></script>
-    <script src="bower_components/sass-bootstrap/js/alert.js"></script>
-    <script src="bower_components/sass-bootstrap/js/dropdown.js"></script>
-    <script src="bower_components/sass-bootstrap/js/tooltip.js"></script>
-    <script src="bower_components/sass-bootstrap/js/modal.js"></script>
-    <script src="bower_components/sass-bootstrap/js/transition.js"></script>
-    <script src="bower_components/sass-bootstrap/js/button.js"></script>
-    <script src="bower_components/sass-bootstrap/js/popover.js"></script>
-    <script src="bower_components/sass-bootstrap/js/carousel.js"></script>
-    <script src="bower_components/sass-bootstrap/js/scrollspy.js"></script>
-    <script src="bower_components/sass-bootstrap/js/collapse.js"></script>
-    <script src="bower_components/sass-bootstrap/js/tab.js"></script>
     <!-- endbuild -->
 </body>
 </html>
