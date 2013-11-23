@@ -1,24 +1,78 @@
 [
   {
+    "type": "Projects",
+    "items": [
+      {
+        "title": "Reclamações BR",
+        "period": {
+          "start": "December 2012",
+          "end": "February 2013"
+        },
+        "location": "Porto Alegre, Brazil",
+        "description": "An open source Brazilian customer complaint data visualisation website that gathers and presents information in a relevant context and a clear way. Second place at the First Brazilian Justice Ministry Open Data Application Contest."
+      },
+      {
+        "title": "Rodovias BR",
+        "period": {
+          "start": "September 2013",
+          "end": "October 2013"
+        },
+        "location": "Porto Alegre, Brazil",
+        "description": "An open source Brazilian road accidents data visualisation website that gathers and presents information on accidents and fatalities in the Brazilian roads displaying total by state and by road, including causes of the accidents and a heat maps highlighting the most violent roads and states. All data provided by the Ministry of Justice and the Federal Highway Police."
+      }
+    ]
+  },
+  {
     "type": "Work Experience",
     "items": [
       {
-        "company": "Company 1",
+        "company": "ThoughtWorks",
+        "title": "Consultant Developer",
+        "period": {
+          "start": "October 2011",
+          "end": "Present"
+        },
+        "image": "http://placehold.it/48x48",
+        "location": "Porto Alegre, Brazil",
+        "description": "Java Web application development. Working mainly with US based clients in an agile environment with distributed teams. Technologies: Java (Spring, Ibatis, JMS, JUnit, JMock, Mockito), Ruby (RSpec, Watir, Taza, Cucumber), Javascript, HTML/CSS, Oracle Database, Apache Solr, CruiseControl CI, Jenkins CI and others."
+      },
+      {
+        "company": "Dell",
         "title": "Software Developer",
         "period": {
-          "start": "2009",
-          "end": "2013"
+          "start": "July 2010",
+          "end": "October 2011"
         },
-        "description": "Bacon ipsum dolor sit amet fatback beef kielbasa sausage meatball ball tip spare ribs venison swine flank ground round. Brisket ground round biltong venison tri-tip, shank salami. Fatback pork loin shoulder chuck. Bacon sirloin beef ribs corned beef bresaola strip steak. Andouille filet mignon turducken prosciutto pastrami frankfurter beef. Andouille shank prosciutto, fatback filet mignon ribeye tri-tip. Ball tip cow rump meatloaf tri-tip beef ribs flank swine ham hock"
+        "image": "http://placehold.it/48x48",
+        "location": "Porto Alegre, Brazil",
+        "description": "WebServices development in a Service-Oriented Architecture platform. Technologies: Java, SOA, SQL, Oracle Service Bus, BPEL, BPMN"
+      },
+      {
+        "company": "PUCRS",
+        "title": "Software Developer",
+        "period": {
+          "start": "August 2008",
+          "end": "July 2010"
+        },
+        "image": "http://placehold.it/48x48",
+        "location": "Porto Alegre, Brazil",
+        "description": "Development and maintenance of web applications using Java Servlets/JSP and other Java frameworks. Technologies: Java, SQL, JavaScript, HTML, CSS, Oracle Database, UML"
       }
     ]
   },
   {
     "type": "Education",
-    "items": []
-  },
-  {
-    "type": "Projects",
-    "items": []
+    "items": [
+      {
+        "company": "Pontifícia Universidade Católica do Rio Grande do Sul",
+        "title": "Bachelor Computer Science",
+        "period": {
+          "start": "March 2006",
+          "end": "December 2010"
+        },
+        "image": "http://placehold.it/48x48",
+        "location": "Porto Alegre, Brazil"
+      }
+    ]
   }
 ]

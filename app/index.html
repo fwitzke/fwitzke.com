@@ -11,6 +11,8 @@
     <meta name="viewport" content="width=device-width">
 
     <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.3.0/pure-min.css">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
@@ -40,30 +42,56 @@
           <nav class="nav">
             <ul class="nav-list">
               <li class="nav-item">
-                <a class="pure-button" href="http://purecss.io">Pure</a>
+                <span class="fa-stack fa-lg">
+                  <a href="mailto:fernando.muraro@gmail.com" target="_blank">
+                    <i class="fa fa-square-o fa-stack-2x"></i>
+                    <i class="fa fa-envelope fa-stack-1x"></i>
+                  </a>
+                </span>
               </li>
               <li class="nav-item">
-                <a class="pure-button" href="http://yuilibrary.com">YUI Library</a>
+                <span class="fa-stack fa-lg">
+                  <a href="http://www.linkedin.com/in/fwitzke" target="_blank">
+                    <i class="fa fa-square-o fa-stack-2x"></i>
+                    <i class="fa fa-linkedin fa-stack-1x"></i>
+                  </a>
+                </span>
+              </li>
+              <li class="nav-item">
+                <span class="fa-stack fa-lg">
+                  <a href="http://github.com/fwitzke" target="_blank">
+                    <i class="fa fa-square-o fa-stack-2x"></i>
+                    <i class="fa fa-github fa-stack-1x"></i>
+                  </a>
+                </span>
+              </li>
+              <li class="nav-item">
+                <span class="fa-stack fa-lg">
+                  <a href="http://twitter.com/pigroxalot" target="_blank">
+                    <i class="fa fa-square-o fa-stack-2x"></i>
+                    <i class="fa fa-twitter fa-stack-1x"></i>
+                  </a>
+                </span>
               </li>
             </ul>
           </nav>
         </header>
       </div>
+
       <div class="pure-u-1">
         <div class="content">
+          <div class="experiences" ng-repeat="exp in experiences">
+            <h1 class="experience-type">{{exp.type}}</h1>
 
-          <div class="posts" ng-repeat="exp in experiences">
-            <h1 class="content-subhead">{{exp.type}}</h1>
-
-            <!-- A single blog post -->
-            <section class="post" ng-repeat="item in exp.items">
-              <header class="post-header">
-                <img class="post-avatar" alt="alt for image" height="48" width="48" src="http://placehold.it/48x48">
-                <h2 class="post-title">{{item.company}}</h2>
-                <p class="post-meta">{{item.period|period}}</p>
+            <section class="experience" ng-repeat="item in exp.items">
+              <header>
+                <img class="avatar" ng-if="item.image" height="48" width="48" ng-src="{{item.image}}">
+                <h2>{{item.company}}</h2>
+                <h3>{{item.title}}</h3>
+                <p class="meta">{{item.period|period}} | {{item.location}}</p>
               </header>
 
-              <div class="post-description">
+              <div class="description">
                 <p>{{item.description}}</p>
               </div>
             </section>
@@ -72,9 +100,7 @@
           <footer class="footer">
             <div class="pure-menu pure-menu-horizontal pure-menu-open">
               <ul>
-                <li><a href="http://purecss.io/">About</a></li>
-                <li><a href="http://twitter.com/yuilibrary/">Twitter</a></li>
-                <li><a href="http://github.com/yui/pure/">Github</a></li>
+                <li><a href="http://github.com/fwitzke/fwitzke.com" target="_blank">Hosted on Github</a></li>
               </ul>
             </div>
           </footer>
@@ -82,7 +108,6 @@
       </div>
     </div>
 
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
       (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
       function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
