@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.3.0/pure-min.css">
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="styles/4a10936e.main.css"/>
+    <link rel="stylesheet" href="styles/5440dfe0.main.css"/>
     <script src="scripts/vendor/d7100892.modernizr.js"></script>
   </head>
   <body ng-app="witzke">
@@ -75,9 +75,10 @@
 
             <section class="experience" ng-repeat="item in exp.items">
               <header>
-                <div class="avatar" ng-if="item.image" ng-class="item.image"></div>
-                <h2>{{item.company}}</h2>
-                <h3>{{item.title}}</h3>
+                <div class="avatar" ng-if="item.avatar" ng-class="item.avatar"></div>
+                <div class="image" ng-if="item.image" ng-class="item.image"></div>
+                <h2>{{item.title}}</h2>
+                <h3>{{item.company}}</h3>
                 <p class="meta">{{item.period|period}} | {{item.location}}</p>
               </header>
 
