@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.3.0/pure-min.css">
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="styles/0b0e5dbb.main.css"/>
+    <link rel="stylesheet" href="styles/b4d95d72.main.css"/>
     <script src="scripts/vendor/d7100892.modernizr.js"></script>
   </head>
   <body ng-app="witzke">
@@ -71,20 +71,24 @@
 
       <div class="pure-u-1">
         <div class="content">
-          <div class="experiences" ng-repeat="exp in experiences">
-            <h1 class="experience-type">{{exp.type}}</h1>
+          <div class="loading" ng-hide="experiences">
+            <i class="fa fa-spinner fa-spin fa-5x"></i>
+          </div>
+
+          <div class="experiences" ng-repeat="exp in experiences" ng-cloak="">
+            <h1 class="experience-type" ng-bind="exp.type"></h1>
 
             <section class="experience" ng-repeat="item in exp.items">
               <header>
                 <div class="avatar" ng-if="item.avatar" ng-class="item.avatar"></div>
                 <a ng-if="item.image" ng-href="{{item.link}}" target="_blank" class="image" ng-class="item.image"></a>
-                <h2>{{item.title}}</h2>
-                <h3>{{item.company}}</h3>
+                <h2 ng-bind="item.title"></h2>
+                <h3 ng-bind="item.company"></h3>
                 <p class="meta">{{item.period|period}} | {{item.location}}</p>
               </header>
 
               <div class="description">
-                <p>{{item.description}}</p>
+                <p ng-bind="item.description"></p>
               </div>
             </section>
           </div>
