@@ -80,9 +80,9 @@
             <section class="experience" ng-repeat="item in exp.items">
               <header>
                 <div class="avatar" ng-if="item.avatar" ng-class="item.avatar"></div>
-                <div class="image" ng-if="item.image" ng-class="item.image"></div>
-                <h2>{{item.company}}</h2>
-                <h3>{{item.title}}</h3>
+                <a ng-if="item.image" ng-href="{{item.link}}" target="_blank" class="image" ng-class="item.image"></a>
+                <h2>{{item.title}}</h2>
+                <h3>{{item.company}}</h3>
                 <p class="meta">{{item.period|period}} | {{item.location}}</p>
               </header>
 
