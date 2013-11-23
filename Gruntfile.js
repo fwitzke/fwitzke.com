@@ -248,6 +248,7 @@ module.exports = function (grunt) {
 										src: [
 												'*.{ico,png,txt,json}',
 												'.htaccess',
+                        'CNAME',
 												'images/{,*/}*.{webp,gif}',
 												'styles/fonts/{,*/}*.*',
 												'bower_components/sass-bootstrap/fonts/*.*'
