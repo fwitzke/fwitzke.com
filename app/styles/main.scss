@@ -32,7 +32,7 @@ a {
   bottom: 0;
   width: 25%;
   margin-left: -25%;
-  background: rgb(24, 33, 61);
+  background: hsl(190, 50%, 50%);
   color: #fff;
 }
 
@@ -50,7 +50,7 @@ a {
 }
 .brand-tagline {
   font-weight: 300;
-  color: rgb(142, 142, 214);
+  color: hsl(190, 70%, 30%);
 }
 
 .nav {
@@ -71,7 +71,7 @@ a {
     margin-top: 1em;
     &:hover,
     &:focus {
-      color: rgb(142, 142, 214);
+      color: hsl(190, 70%, 30%);
       text-decoration: none;
     }
   }
