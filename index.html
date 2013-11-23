@@ -71,7 +71,7 @@
 
       <div class="pure-u-1">
         <div class="content">
-          <div class="loading" ng-hide="experiences">
+          <div ng-hide="experiences" class="loading">
             <i class="fa fa-spinner fa-spin fa-5x"></i>
           </div>
 
@@ -80,11 +80,10 @@
 
             <section class="experience" ng-repeat="item in exp.items">
               <header>
-                <div class="avatar" ng-if="item.avatar" ng-class="item.avatar"></div>
-                <a ng-if="item.image" ng-href="{{item.link}}" target="_blank" class="image" ng-class="item.image"></a>
+                <a ng-href="{{item.link}}" target="_blank" ng-class="getClass(item)"></a>
                 <h2 ng-bind="item.title"></h2>
                 <h3 ng-bind="item.company"></h3>
-                <p class="meta">{{item.period|period}} | {{item.location}}</p>
+                <p class="meta" ng-bind="getMeta(item)"></p>
               </header>
 
               <div class="description">
@@ -115,7 +114,7 @@
 
     <script src="scripts/afba9df1.vendor.js"></script>
 
-    <script src="scripts/8ce92688.main.js"></script>
+    <script src="scripts/675b70e2.main.js"></script>
 
     <script src="scripts/d41d8cd9.plugins.js"></script>
 </body>

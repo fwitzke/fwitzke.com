@@ -37,6 +37,7 @@
           "end": "Present"
         },
         "avatar": "tw",
+        "link": "http://www.thoughtworks.com",
         "location": "Porto Alegre, Brazil",
         "description": "Java Web application development. Working mainly with US based clients in an agile environment with distributed teams. Technologies: Java (Spring, Ibatis, JMS, JUnit, JMock, Mockito), Ruby (RSpec, Watir, Taza, Cucumber), Javascript, HTML/CSS, Oracle Database, Apache Solr, CruiseControl CI, Jenkins CI and others."
       },
@@ -48,6 +49,7 @@
           "end": "October 2011"
         },
         "avatar": "dell",
+        "link": "http://www.dell.com",
         "location": "Porto Alegre, Brazil",
         "description": "WebServices development in a Service-Oriented Architecture platform. Technologies: Java, SOA, SQL, Oracle Service Bus, BPEL, BPMN"
       },
@@ -59,6 +61,7 @@
           "end": "July 2010"
         },
         "avatar": "pucrs",
+        "link": "http://www.pucrs.br",
         "location": "Porto Alegre, Brazil",
         "description": "Development and maintenance of web applications using Java Servlets/JSP and other Java frameworks. Technologies: Java, SQL, JavaScript, HTML, CSS, Oracle Database, UML"
       }
@@ -75,6 +78,7 @@
           "end": "December 2010"
         },
         "avatar": "pucrs",
+        "link": "http://www.pucrs.br",
         "location": "Porto Alegre, Brazil"
       }
     ]
