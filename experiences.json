@@ -9,6 +9,7 @@
           "end": "February 2013"
         },
         "location": "Porto Alegre, Brazil",
+        "image": "http://placehold.it/48x48",
         "description": "An open source Brazilian customer complaint data visualisation website that gathers and presents information in a relevant context and a clear way. Second place at the First Brazilian Justice Ministry Open Data Application Contest."
       },
       {
@@ -54,7 +55,7 @@
           "start": "August 2008",
           "end": "July 2010"
         },
-        "image": "http://placehold.it/48x48",
+        "image": "pucrs",
         "location": "Porto Alegre, Brazil",
         "description": "Development and maintenance of web applications using Java Servlets/JSP and other Java frameworks. Technologies: Java, SQL, JavaScript, HTML, CSS, Oracle Database, UML"
       }
