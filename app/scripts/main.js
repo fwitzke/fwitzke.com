@@ -1,10 +1,11 @@
 'use strict';
 var app = angular.module('witzke', []);
 
-app.controller('ExperienceCtrl', ['$scope', '$http', function($scope, $http) {
+app.controller('ExperienceCtrl', ['$scope', '$http', '$location', function($scope, $http, $location) {
   $scope.experiences = [];
 
-  $http.get('/experiences.json').success(function(data){
+  var jsonUrl = $location.absUrl() + 'experiences.json';
+  $http.get(jsonUrl).success(function(data){
     $scope.experiences = data;
   });
 }]);
