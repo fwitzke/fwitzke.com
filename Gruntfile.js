@@ -250,7 +250,7 @@ module.exports = function (grunt) {
                         'CNAME',
 												'images/{,*/}*.{webp,gif}',
 												'styles/fonts/{,*/}*.*',
-												'bower_components/sass-bootstrap/fonts/*.*'
+												'bower_components/**/*'
 										]
 								}]
 						},
