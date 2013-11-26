@@ -17,16 +17,8 @@ app.controller('ExperienceCtrl', ['$scope', '$http', function($scope, $http) {
 
 }]);
 
-app.filter('metadata', function(){
-  function getPeriod(item){
-    var period = item.period;
+app.filter('period', function(){
+  return function(period){
     return period.start + ' - ' + period.end;
-  }
-
-  return function(item){
-    if(item.period) {
-      return getPeriod(item) + ' | ' + item.location;
-    }
-    return item.location;
   };
 });

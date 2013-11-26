@@ -75,8 +75,17 @@
               <header>
                 <a ng-href="{{item.link}}" target="_blank" ng-class="getClass(item)"></a>
                 <h2 ng-bind="item.title"></h2>
-                <h3 ng-bind="item.company"></h3>
-                <p class="meta" ng-bind="item|metadata"></p>
+                <h3 ng-if="item.company" ng-bind="item.company"></h3>
+
+                <div class="meta left" ng-if="item.period">
+                  <i class="fa fa-clock-o"></i>
+                  <span ng-bind="item.period|period"></span>
+                </div>
+
+                <div class="meta">
+                  <i class="fa fa-map-marker"></i>
+                  <span ng-bind="item.location"></span>
+                </div>
               </header>
 
               <div class="description">

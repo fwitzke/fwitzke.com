@@ -151,6 +151,10 @@ a {
   }
 
   .meta {
+    display: inline-block;
+    &.left {
+      margin-right: 30px;
+    }
     color: #999;
     font-size: 90%;
     margin: 0;
