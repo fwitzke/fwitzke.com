@@ -7,15 +7,15 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Fernando Witzke</title>
-    <meta name="description" content="Fernando Witzke's personal website">
+    <meta name="description" content="Fernando Witzke's portfolio">
     <meta name="viewport" content="width=device-width">
     <link rel="icon" href="favicon.ico">
 
     <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.3.0/pure-min.css">
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="styles/b4d95d72.main.css"/>
-    <script src="scripts/vendor/d7100892.modernizr.js"></script>
+    <link rel="stylesheet" href="styles/86f35188.main.css"/>
+    <script src="scripts/vendor/3a6c28f6.modernizr.js"></script>
   </head>
   <body ng-app="witzke">
     <!--[if lt IE 10]>
@@ -56,14 +56,6 @@
                   </a>
                 </span>
               </li>
-              <li class="nav-item">
-                <span class="fa-stack fa-lg">
-                  <a href="http://twitter.com/pigroxalot" target="_blank">
-                    <i class="fa fa-square-o fa-stack-2x"></i>
-                    <i class="fa fa-twitter fa-stack-1x"></i>
-                  </a>
-                </span>
-              </li>
             </ul>
           </nav>
         </header>
@@ -83,7 +75,7 @@
                 <a ng-href="{{item.link}}" target="_blank" ng-class="getClass(item)"></a>
                 <h2 ng-bind="item.title"></h2>
                 <h3 ng-bind="item.company"></h3>
-                <p class="meta" ng-bind="getMeta(item)"></p>
+                <p class="meta" ng-bind="item|metadata"></p>
               </header>
 
               <div class="description">
@@ -92,7 +84,7 @@
             </section>
           </div>
 
-          <footer class="footer">
+          <footer>
             <div class="pure-menu pure-menu-horizontal pure-menu-open">
               <ul>
                 <li><a href="http://github.com/fwitzke/fwitzke.com" target="_blank">Hosted on Github</a></li>
@@ -112,10 +104,9 @@
       ga('create','UA-45949472-1');ga('send','pageview');
     </script>
 
-    <script src="scripts/afba9df1.vendor.js"></script>
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/underscore/underscore-min.js"></script>
 
-    <script src="scripts/38fec0cf.main.js"></script>
-
-    <script src="scripts/d41d8cd9.plugins.js"></script>
+    <script src="scripts/bbca076f.main.js"></script>
 </body>
 </html>
