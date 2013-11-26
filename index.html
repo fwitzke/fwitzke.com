@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.3.0/pure-min.css">
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="styles/720ced60.main.css"/>
+    <link rel="stylesheet" href="styles/1e32c0d1.main.css"/>
   </head>
   <body ng-app="witzke">
     <!--[if lt IE 10]>
@@ -73,8 +73,17 @@
               <header>
                 <a ng-href="{{item.link}}" target="_blank" ng-class="getClass(item)"></a>
                 <h2 ng-bind="item.title"></h2>
-                <h3 ng-bind="item.company"></h3>
-                <p class="meta" ng-bind="item|metadata"></p>
+                <h3 ng-if="item.company" ng-bind="item.company"></h3>
+
+                <div class="meta left" ng-if="item.period">
+                  <i class="fa fa-clock-o"></i>
+                  <span ng-bind="item.period|period"></span>
+                </div>
+
+                <div class="meta">
+                  <i class="fa fa-map-marker"></i>
+                  <span ng-bind="item.location"></span>
+                </div>
               </header>
 
               <div class="description">
@@ -107,6 +116,6 @@
     <script src="bower_components/angular/angular.min.js"></script>
     <script src="bower_components/underscore/underscore-min.js"></script>
 
-    <script src="scripts/9b0ef892.main.js"></script>
+    <script src="scripts/c04f3191.main.js"></script>
 </body>
 </html>

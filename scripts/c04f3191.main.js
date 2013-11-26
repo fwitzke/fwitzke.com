@@ -1,0 +1,1 @@
+"use strict";var app=angular.module("witzke",[]);app.controller("ExperienceCtrl",["$scope","$http",function(a,b){a.experiences=[],b.get("experiences.json").success(function(b){a.experiences=b}),a.getClass=function(a){return a.avatar?"avatar "+a.avatar:"image "+a.image}}]),app.filter("period",function(){return function(a){return a.start+" - "+a.end}});
