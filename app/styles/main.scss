@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+@mixin image-background($image) {
+  background: url($image) no-repeat;  
+  background-size: 200px 200px;
+}
+
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -96,6 +101,12 @@ a {
 
 .experience {
   padding-bottom: 2em;
+  min-height: 230px;
+  width: 90%;
+
+  p {
+    text-align: justify;
+  }
 
   .avatar {
     width: 100px;
@@ -122,13 +133,14 @@ a {
     float: left;
     margin-right: 1em;
     box-shadow: 2px 2px #40aabf;
+    &.dayagassis {
+      @include image-background('../images/dayagassis.png');
+    }
     &.reclamacoesbr {
-      background: url(../images/reclamacoesbr.png) no-repeat;  
-      background-size: 200px 200px;
+      @include image-background('../images/reclamacoesbr.png');
     }
     &.rodoviasbr {
-      background: url(../images/rodoviasbr.png) no-repeat;  
-      background-size: 200px 200px;
+      @include image-background('../images/rodoviasbr.png');
     }
   }
 

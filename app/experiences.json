@@ -5,10 +5,6 @@
       {
         "title": "Reclamações BR",
         "link": "http://reclamacoes-br.herokuapp.com/",
-        "period": {
-          "start": "December 2012",
-          "end": "February 2013"
-        },
         "image": "reclamacoesbr",
         "location": "Porto Alegre, Brazil",
         "description": "An open source Brazilian customer complaint data visualisation website that gathers and presents information in a relevant context and a clear way. Second place at the First Brazilian Justice Ministry Open Data Application Contest."
@@ -16,13 +12,16 @@
       {
         "title": "Rodovias BR",
         "link": "http://rodovias.herokuapp.com/",
-        "period": {
-          "start": "September 2013",
-          "end": "October 2013"
-        },
         "image": "rodoviasbr",
         "location": "Porto Alegre, Brazil",
         "description": "An open source Brazilian road accidents data visualisation website that gathers and presents information on accidents and fatalities in the Brazilian roads displaying total by state and by road, including causes of the accidents and a heat maps highlighting the most violent roads and states. All data provided by the Ministry of Justice and the Federal Highway Police."
+      },
+      {
+        "title": "Day&Agassis",
+        "link": "http://dayagassis.adv.br/",
+        "image": "dayagassis",
+        "location": "Porto Alegre, Brazil",
+        "description": "Website for a local law firm containing information about practice areas, team members and contact."
       }
     ]
   },

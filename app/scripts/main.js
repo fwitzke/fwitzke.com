@@ -24,6 +24,9 @@ app.filter('metadata', function(){
   }
 
   return function(item){
-    return getPeriod(item) + ' | ' + item.location;
+    if(item.period) {
+      return getPeriod(item) + ' | ' + item.location;
+    }
+    return item.location;
   };
 });
