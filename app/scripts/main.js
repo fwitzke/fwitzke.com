@@ -1,7 +1,7 @@
 'use strict';
 var app = angular.module('witzke', []);
 
-app.controller('ExperienceCtrl', ['$scope', '$http', '$filter', function($scope, $http, $filter) {
+app.controller('ExperienceCtrl', ['$scope', '$http', function($scope, $http) {
   $scope.experiences = [];
   $http.get('experiences.json').success(function(data){
     $scope.experiences = data;
@@ -24,6 +24,6 @@ app.filter('metadata', function(){
   }
 
   return function(item){
-    return getPeriod(item) + " | " + item.location;
+    return getPeriod(item) + ' | ' + item.location;
   };
 });

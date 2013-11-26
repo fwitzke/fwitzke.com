@@ -1,10 +1,9 @@
 {
   "name": "fwitzke",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "dependencies": {
     "angular": "1.2.2",
-    "modernizr": "~2.6.2",
-    "jquery": "~1.10.2"
-  },
-  "devDependencies": {}
+    "modernizr": "~2.7.0",
+    "underscore": "~1.5.2"
+  }
 }

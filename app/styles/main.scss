@@ -145,17 +145,19 @@ a {
   }
 }
 
-.footer {
+footer {
   text-align: center;
   padding: 1em 0;
-  a {
-    color: #ccc;
-    font-size: 80%;
+
+  .pure-menu {
+    a {
+      color: #ccc;
+      font-size: 80%;
+      &:hover, &:focus {
+        background: none;
+      }
+    }
   }
-}
-.footer .pure-menu a:hover,
-.footer .pure-menu a:focus {
-  background: none;
 }
 
 @media (max-width: 767px) {
