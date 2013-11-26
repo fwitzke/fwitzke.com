@@ -3,14 +3,9 @@ var app = angular.module('witzke', []);
 
 app.controller('ExperienceCtrl', ['$scope', '$http', '$filter', function($scope, $http, $filter) {
   $scope.experiences = [];
-
   $http.get('experiences.json').success(function(data){
     $scope.experiences = data;
   });
-
-  $scope.getMeta = function(item) {
-    return $filter('period')(item.period) + ' | ' + item.location;
-  };
 
   $scope.getClass = function(item) {
     if(item.avatar) {
@@ -22,8 +17,13 @@ app.controller('ExperienceCtrl', ['$scope', '$http', '$filter', function($scope,
 
 }]);
 
-app.filter('period', function(){
-  return function(period){
+app.filter('metadata', function(){
+  function getPeriod(item){
+    var period = item.period;
     return period.start + ' - ' + period.end;
+  }
+
+  return function(item){
+    return getPeriod(item) + " | " + item.location;
   };
 });

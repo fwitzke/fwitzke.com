@@ -7,7 +7,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Fernando Witzke</title>
-    <meta name="description" content="Fernando Witzke's personal website">
+    <meta name="description" content="Fernando Witzke's portfolio">
     <meta name="viewport" content="width=device-width">
     <link rel="icon" href="favicon.ico">
 
@@ -60,14 +60,6 @@
                   </a>
                 </span>
               </li>
-              <li class="nav-item">
-                <span class="fa-stack fa-lg">
-                  <a href="http://twitter.com/pigroxalot" target="_blank">
-                    <i class="fa fa-square-o fa-stack-2x"></i>
-                    <i class="fa fa-twitter fa-stack-1x"></i>
-                  </a>
-                </span>
-              </li>
             </ul>
           </nav>
         </header>
@@ -87,7 +79,7 @@
                 <a ng-href="{{item.link}}" target="_blank" ng-class="getClass(item)"></a>
                 <h2 ng-bind="item.title"></h2>
                 <h3 ng-bind="item.company"></h3>
-                <p class="meta" ng-bind="getMeta(item)"></p>
+                <p class="meta" ng-bind="item|metadata"></p>
               </header>
 
               <div class="description">
