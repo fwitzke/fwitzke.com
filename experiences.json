@@ -7,21 +7,40 @@
         "link": "http://reclamacoes-br.herokuapp.com/",
         "image": "reclamacoesbr",
         "location": "Porto Alegre, Brazil",
-        "description": "An open source Brazilian customer complaint data visualisation website that gathers and presents information in a relevant context and a clear way. Second place at the First Brazilian Justice Ministry Open Data Application Contest."
+        "description": "An open source Brazilian customer complaint data visualisation website that gathers and presents information in a relevant context and a clear way. Second place at the First Brazilian Justice Ministry Open Data Application Contest.",
+        "techstack": [
+          { "type": "language", "name": "ruby" },
+          { "type": "language", "name": "javascript" },
+          { "type": "language", "name": "html/css" },
+          { "type": "database", "name": "mongodb" },
+          { "type": "version-control", "name": "git" }
+        ]
       },
       {
         "title": "Rodovias BR",
         "link": "http://rodovias.herokuapp.com/",
         "image": "rodoviasbr",
         "location": "Porto Alegre, Brazil",
-        "description": "An open source Brazilian road accidents data visualisation website that gathers and presents information on accidents and fatalities in the Brazilian roads displaying total by state and by road, including causes of the accidents and a heat maps highlighting the most violent roads and states. All data provided by the Ministry of Justice and the Federal Highway Police."
+        "description": "An open source Brazilian road accidents data visualisation website that gathers and presents information on accidents and fatalities in the Brazilian roads displaying total by state and by road, including causes of the accidents and a heat maps highlighting the most violent roads and states. All data provided by the Ministry of Justice and the Federal Highway Police.",
+        "techstack": [
+          { "type": "language", "name": "javascript" },
+          { "type": "language", "name": "html/css" },
+          { "type": "database", "name": "mongodb" },
+          { "type": "version-control", "name": "git" }
+        ]
       },
       {
         "title": "Day&Agassis",
         "link": "http://dayagassis.adv.br/",
         "image": "dayagassis",
         "location": "Porto Alegre, Brazil",
-        "description": "Website for a local law firm containing information about practice areas, team members and contact."
+        "description": "Website for a local law firm containing information about practice areas, team members and contact.",
+        "techstack": [
+          { "type": "language", "name": "ruby" },
+          { "type": "language", "name": "html/css" },
+          { "type": "database", "name": "postgres" },
+          { "type": "version-control", "name": "git" }
+        ]
       }
     ]
   },
@@ -38,7 +57,18 @@
         "avatar": "tw",
         "link": "http://www.thoughtworks.com",
         "location": "Porto Alegre, Brazil",
-        "description": "Java Web application development. Working mainly with US based clients in an agile environment with distributed teams. Technologies: Java (Spring, Ibatis, JMS, JUnit, JMock, Mockito), Ruby (RSpec, Watir, Taza, Cucumber), Javascript, HTML/CSS, Oracle Database, Apache Solr, CruiseControl CI, Jenkins CI and others."
+        "description": "Currently working as a software development consultant. Worked on different projects for a big retail company based in the USA. One of these projects replaced a legacy vendor catalog management system for a customized solution. Another project helped on the automation of virtual machines provisioning which enabled the client to have it's continuous integration pipeline fully automated.",
+        "techstack": [
+          { "type": "domain", "name": "retail" },
+          { "type": "language", "name": "java" },
+          { "type": "language", "name": "javascript" },
+          { "type": "language", "name": "ruby" },
+          { "type": "language", "name": "html/css" },
+          { "type": "language", "name": "sql" },
+          { "type": "database", "name": "oracle" },
+          { "type": "version-control", "name": "svn" },
+          { "type": "version-control", "name": "git" }
+        ]
       },
       {
         "company": "Dell",
@@ -50,7 +80,14 @@
         "avatar": "dell",
         "link": "http://www.dell.com",
         "location": "Porto Alegre, Brazil",
-        "description": "WebServices development in a Service-Oriented Architecture platform. Technologies: Java, SOA, SQL, Oracle Service Bus, BPEL, BPMN"
+        "description": "Developed many web services in a Service Oriented Architecture. These services were of critical importance because they were consumed by many applications inside Dell Financial Services like customer credit approvals, customer service, payment gateways and others. Worked on distributed teams across Brazil, USA and India.",
+        "techstack": [
+          { "type": "domain", "name": "finance" },
+          { "type": "language", "name": "java" },
+          { "type": "language", "name": "sql" },
+          { "type": "database", "name": "oracle" },
+          { "type": "version-control", "name": "tfs" }
+        ]
       },
       {
         "company": "PUCRS",
@@ -62,7 +99,16 @@
         "avatar": "pucrs",
         "link": "http://www.pucrs.br",
         "location": "Porto Alegre, Brazil",
-        "description": "Development and maintenance of web applications using Java Servlets/JSP and other Java frameworks. Technologies: Java, SQL, JavaScript, HTML, CSS, Oracle Database, UML"
+        "description": "Development and maintenance of web applications that support the business of this University. Worked on different projects like students registration, internship management, internal security systems, grades publication, library books reservation and sudents messaging system.",
+        "techstack": [
+          { "type": "domain", "name": "education" },
+          { "type": "language", "name": "java" },
+          { "type": "language", "name": "javascript" },
+          { "type": "language", "name": "html/css" },
+          { "type": "language", "name": "sql" },
+          { "type": "database", "name": "oracle" },
+          { "type": "version-control", "name": "svn" }
+        ]
       }
     ]
   },

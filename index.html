@@ -12,9 +12,10 @@
     <link rel="icon" href="favicon.ico">
 
     <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.3.0/pure-min.css">
-    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <link rel="stylesheet" href="bower_components/hint.css/hint.min.css">
 
-    <link rel="stylesheet" href="styles/1e32c0d1.main.css"/>
+    <link rel="stylesheet" href="styles/a6928172.main.css"/>
   </head>
   <body ng-app="witzke">
     <!--[if lt IE 10]>
@@ -75,7 +76,7 @@
                 <h2 ng-bind="item.title"></h2>
                 <h3 ng-if="item.company" ng-bind="item.company"></h3>
 
-                <div class="meta left" ng-if="item.period">
+                <div class="meta shift-right" ng-if="item.period">
                   <i class="fa fa-clock-o"></i>
                   <span ng-bind="item.period|period"></span>
                 </div>
@@ -88,6 +89,10 @@
 
               <div class="description">
                 <p ng-bind="item.description"></p>
+              </div>
+
+              <div ng-if="item.techstack" class="techstack">
+                <span ng-repeat="t in item.techstack" ng-bind="t.name" data-hint="{{t.type}}" class="hint--top" ng-class="getTechstackClass(t)"></span>
               </div>
             </section>
           </div>
@@ -116,6 +121,6 @@
     <script src="bower_components/angular/angular.min.js"></script>
     <script src="bower_components/underscore/underscore-min.js"></script>
 
-    <script src="scripts/c04f3191.main.js"></script>
+    <script src="scripts/4d3c4549.main.js"></script>
 </body>
 </html>
