@@ -4,6 +4,9 @@
   box-sizing: border-box;
 }
 
+$color-background: hsl(200, 50%, 50%);
+$color-base: hsl(200, 70%, 30%);
+
 @mixin image-background($image) {
   background: url($image) no-repeat;  
   background-size: 200px 200px;
@@ -37,7 +40,7 @@ a {
   bottom: 0;
   width: 25%;
   margin-left: -25%;
-  background: hsl(190, 50%, 50%);
+  background: $color-background;
   color: #fff;
 }
 
@@ -55,7 +58,7 @@ a {
 }
 .brand-tagline {
   font-weight: 300;
-  color: hsl(190, 70%, 30%);
+  color: $color-base;
 }
 
 .nav {
@@ -76,7 +79,7 @@ a {
     margin-top: 1em;
     &:hover,
     &:focus {
-      color: hsl(190, 70%, 30%);
+      color: $color-base;
       text-decoration: none;
     }
   }
@@ -102,6 +105,7 @@ a {
 .experience {
   padding-bottom: 2em;
   min-height: 230px;
+  margin-bottom: 30px;
   width: 90%;
 
   p {
@@ -152,18 +156,58 @@ a {
 
   .meta {
     display: inline-block;
-    &.left {
-      margin-right: 30px;
-    }
     color: #999;
     font-size: 90%;
     margin: 0;
+
+    &.shift-right {
+      margin-right: 20px;
+    }
+  }
+}
+
+@mixin badge($background, $color) {
+  background-color: $background;
+  color: $color;
+}
+
+.techstack {
+  float: right;
+  $color-badge: invert($color-base);
+  $text-color: white;
+
+  .badge {
+    $color-lang: #1B5672;
+    $color-db: #7F2B34;
+    $color-vc: #727021;
+
+    float: left;
+    padding: 5px;
+    margin: 0px 2px;
+    border: 1px solid lightGrey;
+
+    &.domain {
+      @include badge(#BFBA23, $text-color);
+    }
+
+    &.language {
+      @include badge($color-lang, $text-color);
+    }
+
+    &.database {
+      @include badge($color-db, $text-color);
+    }
+
+    &.version-control {
+      @include badge($color-vc, $text-color);
+    }
   }
 }
 
 footer {
   text-align: center;
   padding: 1em 0;
+  border-top: 1px solid #eee;
 
   .pure-menu {
     a {

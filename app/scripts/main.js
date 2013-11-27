@@ -15,6 +15,10 @@ app.controller('ExperienceCtrl', ['$scope', '$http', function($scope, $http) {
     }
   };
 
+  $scope.getTechstackClass = function(item) {
+    return 'badge ' + item.type + ' ' + item.name;
+  };
+
 }]);
 
 app.filter('period', function(){
