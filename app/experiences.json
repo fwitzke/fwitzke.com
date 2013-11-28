@@ -99,7 +99,7 @@
         "avatar": "pucrs",
         "link": "http://www.pucrs.br",
         "location": "Porto Alegre, Brazil",
-        "description": "Development and maintenance of web applications that support the business of this University. Worked on different projects like students registration, internship management, internal security systems, grades publication, library books reservation and sudents messaging system.",
+        "description": "Development and maintenance of web applications that support the business of this University. Worked on different projects like students registration, internship management, internal security systems, grades publication, library books reservation and students messaging system.",
         "techstack": [
           { "type": "domain", "name": "education" },
           { "type": "language", "name": "java" },
