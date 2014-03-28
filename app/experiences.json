@@ -3,6 +3,20 @@
     "type": "Projects",
     "items": [
       {
+        "title": "Alugator",
+        "link": "http://alugator.com.br",
+        "image": "alugator",
+        "location": "Porto Alegre, Brazil",
+        "description": "Alugator is a real estate search engine that helps people to find their next home in Brazil.",
+        "techstack": [
+          { "type": "language", "name": "ruby" },
+          { "type": "language", "name": "javascript" },
+          { "type": "language", "name": "html/css" },
+          { "type": "database", "name": "mongodb" },
+          { "type": "version-control", "name": "git" }
+        ]
+      },
+      {
         "title": "Reclamações BR",
         "link": "http://reclamacoes-br.herokuapp.com/",
         "image": "reclamacoesbr",

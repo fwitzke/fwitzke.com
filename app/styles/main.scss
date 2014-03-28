@@ -146,6 +146,9 @@ a {
     &.rodoviasbr {
       @include image-background('../images/rodoviasbr.png');
     }
+    &.alugator {
+      @include image-background('../images/alugator.png');
+    }
   }
 
   .description {
