@@ -6,8 +6,8 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Fernando Witzke</title>
-    <meta name="description" content="Fernando Witzke's portfolio">
+    <title>Fernando Witzke's website</title>
+    <meta name="description" content="Fernando Witzke's portfolio website.">
     <meta name="viewport" content="width=device-width">
     <link rel="icon" href="favicon.ico">
 
@@ -15,7 +15,9 @@
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
     <link rel="stylesheet" href="bower_components/hint.css/hint.min.css">
 
-    <link rel="stylesheet" href="styles/a6928172.main.css"/>
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
   </head>
   <body ng-app="witzke">
     <!--[if lt IE 10]>
@@ -117,10 +119,14 @@
       ga('create','UA-45949472-1');ga('send','pageview');
     </script>
 
-    <script src="scripts/vendor/3a6c28f6.modernizr.js"></script>
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
     <script src="bower_components/angular/angular.min.js"></script>
     <script src="bower_components/underscore/underscore-min.js"></script>
 
-    <script src="scripts/4d3c4549.main.js"></script>
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
 </body>
 </html>
