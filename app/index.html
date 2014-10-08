@@ -329,17 +329,10 @@
       e=o.createElement(i);r=o.getElementsByTagName(i)[0];
       e.src='//www.google-analytics.com/analytics.js';
       r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-      ga('create','UA-45949472-1');ga('send','pageview');
+
+      if (/fwitzke\.com/.test(document.location.hostname)) {
+        ga('create','UA-45949472-1');ga('send','pageview');
+      }
     </script>
-
-    <!-- build:js scripts/vendor/modernizr.js -->
-    <script src="bower_components/modernizr/modernizr.js"></script>
-    <!-- endbuild -->
-    <script src="bower_components/angular/angular.min.js"></script>
-    <script src="bower_components/underscore/underscore-min.js"></script>
-
-    <!-- build:js scripts/main.js -->
-    <script src="scripts/main.js"></script>
-    <!-- endbuild -->
 </body>
 </html>

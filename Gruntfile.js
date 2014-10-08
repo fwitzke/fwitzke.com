@@ -137,17 +137,6 @@ module.exports = function (grunt) {
 								}]
 						}
 				},
-				// not used since Uglify task does concat,
-				// but still available if needed
-				/*concat: {
-						dist: {}
-				},*/
-				// not enabled since usemin task does concat and uglify
-				// check index.html to edit your build targets
-				// enable this task if you prefer defining your build targets here
-				/*uglify: {
-						dist: {}
-				},*/
 				'bower-install': {
 						app: {
 								html: '<%= yeoman.app %>/index.html',
@@ -262,16 +251,6 @@ module.exports = function (grunt) {
 								src: '{,*/}*.css'
 						}
 				},
-				modernizr: {
-						devFile: '<%= yeoman.app %>/bower_components/modernizr/modernizr.js',
-						outputFile: '<%= yeoman.dist %>/bower_components/modernizr/modernizr.js',
-						files: [
-								'<%= yeoman.dist %>/scripts/{,*/}*.js',
-								'<%= yeoman.dist %>/styles/{,*/}*.css',
-								'!<%= yeoman.dist %>/scripts/vendor/*'
-						],
-						uglify: true
-				},
 				concurrent: {
 						server: [
 								'compass',
@@ -324,8 +303,6 @@ module.exports = function (grunt) {
 				'autoprefixer',
 				'concat',
 				'cssmin',
-				'uglify',
-				'modernizr',
 				'copy:dist',
 				'rev',
 				'usemin'
