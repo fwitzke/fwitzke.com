@@ -11,18 +11,17 @@
     <meta name="viewport" content="width=device-width">
     <link rel="icon" href="favicon.ico">
 
-    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.3.0/pure-min.css">
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
     <link rel="stylesheet" href="bower_components/hint.css/hint.min.css">
 
-    <link rel="stylesheet" href="styles/b67828f9.main.css"/>
+    <link rel="stylesheet" href="styles/0d28bc8a.main.css"/>
   </head>
-  <body ng-app="witzke">
+  <body>
     <!--[if lt IE 10]>
         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <div class="pure-g-r" id="layout" ng-controller="ExperienceCtrl">
+    <div class="pure-g-r" id="layout">
       <div class="sidebar pure-u">
         <header class="header">
           <hgroup>
@@ -63,39 +62,250 @@
 
       <div class="pure-u-1">
         <div class="content">
-          <div ng-hide="experiences" class="loading">
-            <i class="fa fa-spinner fa-spin fa-5x"></i>
-          </div>
+          <article class="experiences">
+            <h1 class="experience-type">Projects</h1>
 
-          <div class="experiences" ng-repeat="exp in experiences" ng-cloak="">
-            <h1 class="experience-type" ng-bind="exp.type"></h1>
+            <section class="experience pure-g">
+              <figure class="pure-u-1 pure-u-md-1-4">
+                <a href="http://alugator.com.br" target="_blank">
+                  <img src="/images/a54754e0.alugator.png" alt="Alugator Website">
+                </a>
+              </figure>
 
-            <section class="experience" ng-repeat="item in exp.items">
+              <section class="details pure-u-1 pure-u-md-3-4">
+                <h2>Alugator</h2>
+
+                <div class="meta">
+                  <i class="fa fa-map-marker"></i>
+                  <span>Porto Alegre, Brazil</span>
+                </div>
+
+                <div class="description">
+                  <p>Alugator is a real estate search engine that helps people to find their next home in Brazil.</p>
+                </div>
+
+                <div class="techstack">
+                  <span data-hint="language" class="badge language hint--top">ruby</span>
+                  <span data-hint="language" class="badge language hint--top">javascript</span>
+                  <span data-hint="language" class="badge language hint--top">html/css</span>
+                  <span data-hint="database" class="badge database hint--top">mongodb</span>
+                  <span data-hint="version-control" class="badge version-control hint--top">git</span>
+                </div>
+              </section>
+
+            </section>
+
+            <section class="experience pure-g">
+              <figure class="pure-u-1 pure-u-md-1-4">
+                <a href="http://reclamacoes-br.herokuapp.com/" target="_blank">
+                  <img src="/images/755b3724.reclamacoesbr.png" alt="Reclamações BR">
+                </a>
+              </figure>
+
+              <section class="details pure-u-1 pure-u-md-3-4">
+                <h2>Reclamações BR</h2>
+
+                <div class="meta">
+                  <i class="fa fa-map-marker"></i>
+                  <span>Porto Alegre, Brazil</span>
+                </div>
+
+                <div class="description">
+                  <p>An open source Brazilian customer complaint data visualisation website that gathers and presents information in a relevant context and a clear way. Second place at the First Brazilian Justice Ministry Open Data Application Contest.</p>
+                </div>
+
+                <div class="techstack">
+                  <span data-hint="language" class="badge language hint--top">ruby</span>
+                  <span data-hint="language" class="badge language hint--top">javascript</span>
+                  <span data-hint="language" class="badge language hint--top">html/css</span>
+                  <span data-hint="database" class="badge database hint--top">mongodb</span>
+                  <span data-hint="version-control" class="badge version-control hint--top">git</span>
+                </div>
+              </section>
+            </section>
+
+            <section class="experience pure-g">
+              <figure class="pure-u-1 pure-u-md-1-4">
+                <a href="http://rodovias.herokuapp.com/" target="_blank">
+                  <img src="/images/5506775c.rodoviasbr.png" alt="Rodovias BR">
+                </a>
+              </figure>
+
+              <section class="details pure-u-1 pure-u-md-3-4">
+                <h2>Rodovias BR</h2>
+
+                <div class="meta">
+                  <i class="fa fa-map-marker"></i>
+                  <span>Porto Alegre, Brazil</span>
+                </div>
+
+                <div class="description">
+                  <p>An open source Brazilian road accidents data visualisation website that gathers and presents information on accidents and fatalities in the Brazilian roads displaying total by state and by road, including causes of the accidents and a heat maps highlighting the most violent roads and states. All data provided by the Ministry of Justice and the Federal Highway Police.</p>
+                </div>
+
+                <div class="techstack">
+                  <span data-hint="language" class="badge language hint--top">javascript</span>
+                  <span data-hint="language" class="badge language hint--top">html/css</span>
+                  <span data-hint="database" class="badge database hint--top">mongodb</span>
+                  <span data-hint="version-control" class="badge version-control hint--top">git</span>
+                </div>
+              </section>
+            </section>
+
+            <section class="experience pure-g">
+              <figure class="pure-u-1 pure-u-md-1-4">
+                <a href="http://dayagassis.adv.br/" target="_blank">
+                  <img src="/images/8c543b42.dayagassis.png" alt="Day & Agassis">
+                </a>
+              </figure>
+
+              <section class="details pure-u-1 pure-u-md-3-4">
+                <h2>Day&Agassis</h2>
+
+                <div class="meta">
+                  <i class="fa fa-map-marker"></i>
+                  <span>Porto Alegre, Brazil</span>
+                </div>
+
+                <div class="description">
+                  <p>Website for a local law firm containing information about practice areas, team members and contact.</p>
+                </div>
+
+                <div class="techstack">
+                  <span data-hint="language" class="badge language hint--top">ruby</span>
+                  <span data-hint="language" class="badge language hint--top">html/css</span>
+                  <span data-hint="database" class="badge database hint--top">postgres</span>
+                  <span data-hint="version-control" class="badge version-control hint--top">git</span>
+                </div>
+              </section>
+            </section>
+          </article>
+
+          <article class="experiences">
+            <h1 class="experience-type">Work Experience</h1>
+
+            <section class="experience">
               <header>
-                <a ng-href="{{item.link}}" target="_blank" ng-class="getClass(item)"></a>
-                <h2 ng-bind="item.title"></h2>
-                <h3 ng-if="item.company" ng-bind="item.company"></h3>
+                <a href="http://www.thoughtworks.com" target="_blank" class="avatar tw"></a>
+                <h2>Consultant Developer</h2>
+                <h3>ThoughtWorks</h3>
 
-                <div class="meta shift-right" ng-if="item.period">
+                <div class="meta shift-right">
                   <i class="fa fa-clock-o"></i>
-                  <span ng-bind="item.period|period"></span>
+                  <span>October 2011 - Present</span>
                 </div>
 
                 <div class="meta">
                   <i class="fa fa-map-marker"></i>
-                  <span ng-bind="item.location"></span>
+                  <span>Porto Alegre, Brazil</span>
                 </div>
               </header>
 
               <div class="description">
-                <p ng-bind="item.description"></p>
+                <p>Working as a software development consultant. Worked on different projects for a big retail company based in the USA. One of these projects replaced a legacy vendor catalog management system for a customized solution. Another project helped on the automation of virtual machines provisioning which enabled the client to have it's continuous integration pipeline fully automated.</p>
               </div>
 
-              <div ng-if="item.techstack" class="techstack">
-                <span ng-repeat="t in item.techstack" ng-bind="t.name" data-hint="{{t.type}}" class="hint--top" ng-class="getTechstackClass(t)"></span>
+              <div class="techstack">
+                <span data-hint="domain" class="badge domain hint--top">retail</span>
+                <span data-hint="language" class="badge language hint--top">java</span>
+                <span data-hint="language" class="badge language hint--top">javascript</span>
+                <span data-hint="language" class="badge language hint--top">html/css</span>
+                <span data-hint="language" class="badge language hint--top">ruby</span>
+                <span data-hint="language" class="badge language hint--top">sql</span>
+                <span data-hint="database" class="badge database hint--top">oracle</span>
+                <span data-hint="version-control" class="badge version-control hint--top">git</span>
+                <span data-hint="version-control" class="badge version-control hint--top">svn</span>
               </div>
             </section>
-          </div>
+
+            <section class="experience">
+              <header>
+                <a href="http://www.dell.com" target="_blank" class="avatar dell"></a>
+                <h2>Software Developer</h2>
+                <h3>Dell</h3>
+
+                <div class="meta shift-right">
+                  <i class="fa fa-clock-o"></i>
+                  <span>July 2010 - October 2011</span>
+                </div>
+
+                <div class="meta">
+                  <i class="fa fa-map-marker"></i>
+                  <span>Porto Alegre, Brazil</span>
+                </div>
+              </header>
+
+              <div class="description">
+                <p>Developed many web services in a Service Oriented Architecture. These services were of critical importance because they were consumed by many applications inside Dell Financial Services like customer credit approvals, customer service, payment gateways and others. Worked on distributed teams across Brazil, USA and India.</p>
+              </div>
+
+              <div class="techstack">
+                <span data-hint="domain" class="badge domain hint--top">finance</span>
+                <span data-hint="language" class="badge language hint--top">java</span>
+                <span data-hint="language" class="badge language hint--top">sql</span>
+                <span data-hint="database" class="badge database hint--top">oracle</span>
+                <span data-hint="version-control" class="badge version-control hint--top">tfs</span>
+              </div>
+            </section>
+
+            <section class="experience">
+              <header>
+                <a href="http://www.pucrs.br" target="_blank" class="avatar pucrs"></a>
+                <h2>Software Developer</h2>
+                <h3>PUCRS</h3>
+
+                <div class="meta shift-right">
+                  <i class="fa fa-clock-o"></i>
+                  <span>August 2008 - July 2010</span>
+                </div>
+
+                <div class="meta">
+                  <i class="fa fa-map-marker"></i>
+                  <span>Porto Alegre, Brazil</span>
+                </div>
+              </header>
+
+              <div class="description">
+                <p>Development and maintenance of web applications that support the business of this University. Worked on different projects like students registration, internship management, internal security systems, grades publication, library books reservation and students messaging system.</p>
+              </div>
+
+              <div class="techstack">
+                <span data-hint="domain" class="badge domain hint--top">education</span>
+                <span data-hint="language" class="badge language hint--top">java</span>
+                <span data-hint="language" class="badge language hint--top">javascript</span>
+                <span data-hint="language" class="badge language hint--top">html/css</span>
+                <span data-hint="language" class="badge language hint--top">sql</span>
+                <span data-hint="database" class="badge database hint--top">oracle</span>
+                <span data-hint="version-control" class="badge version-control hint--top">svn</span>
+              </div>
+            </section>
+          </article>
+
+          <article class="experiences">
+            <h1 class="experience-type">Education</h1>
+
+            <section class="experience">
+              <header>
+                <a href="http://www.pucrs.br" target="_blank" class="avatar pucrs"></a>
+                <h2>Bachelor Computer Science</h2>
+                <h3>Pontifícia Universidade Católica do Rio Grande do Sul</h3>
+
+                <div class="meta shift-right">
+                  <i class="fa fa-clock-o"></i>
+                  <span>March 2006 - December 2010</span>
+                </div>
+
+                <div class="meta">
+                  <i class="fa fa-map-marker"></i>
+                  <span>Porto Alegre, Brazil</span>
+                </div>
+              </header>
+
+              <div class="description">
+                <p></p>
+              </div>
+            </section>
+          </article>
 
           <footer>
             <div class="pure-menu pure-menu-horizontal pure-menu-open">
@@ -121,6 +331,6 @@
     <script src="bower_components/angular/angular.min.js"></script>
     <script src="bower_components/underscore/underscore-min.js"></script>
 
-    <script src="scripts/4d3c4549.main.js"></script>
+    <script src="scripts/381f43a8.main.js"></script>
 </body>
 </html>
