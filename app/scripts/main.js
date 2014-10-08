@@ -7,22 +7,4 @@ app.controller('ExperienceCtrl', ['$scope', '$http', function($scope, $http) {
     $scope.experiences = data;
   });
 
-  $scope.getClass = function(item) {
-    if(item.avatar) {
-      return 'avatar ' + item.avatar;
-    } else {
-      return 'image ' + item.image;
-    }
-  };
-
-  $scope.getTechstackClass = function(item) {
-    return 'badge ' + item.type + ' ' + item.name;
-  };
-
 }]);
-
-app.filter('period', function(){
-  return function(period){
-    return period.start + ' - ' + period.end;
-  };
-});

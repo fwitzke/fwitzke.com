@@ -85,86 +85,83 @@ a {
   }
 }
 
-.experience-type {
-  text-transform: uppercase;
-  color: #aaa;
-  border-bottom: 1px solid #eee;
-  padding: 0.4em 0;
-  font-size: 80%;
-  font-weight: 500;
-  letter-spacing: 0.1em;
-}
-
 .content {
   padding: 2em 3em 0;
-  .loading {
-    text-align: center;
-  }
 }
 
-.experience {
-  padding-bottom: 2em;
-  min-height: 230px;
-  margin-bottom: 30px;
-  width: 90%;
-
-  p {
-    text-align: justify;
+.experiences {
+  .experience-type {
+    text-transform: uppercase;
+    color: #aaa;
+    border-bottom: 1px solid #eee;
+    padding: 0.4em 0;
+    font-size: 80%;
+    font-weight: 500;
+    letter-spacing: 0.1em;
   }
 
-  .avatar {
-    width: 100px;
-    height: 60px;
-    float: right;
-    margin-left: 1em;
-    &.pucrs {
-      background: url(../images/pucrs.png) no-repeat top right;
-      background-size: 100px auto;
-    }
-    &.dell {
-      background: url(../images/dell.png) no-repeat top right;
-      background-size: 60px 60px;
-    }
-    &.tw {
-      background: url(../images/tw.png) no-repeat top right;
-      background-size: 100px auto;
-    }
-  }
+  .experience {
+    padding-bottom: 2em;
+    min-height: 230px;
+    margin-bottom: 30px;
 
-  .image {
-    width: 200px;
-    height: 200px;
-    float: left;
-    margin-right: 1em;
-    box-shadow: 2px 2px #40aabf;
-    &.dayagassis {
-      @include image-background('../images/dayagassis.png');
+    &.pure-g {
+      @media (max-width: 767px) {
+        text-align: center;
+      }
     }
-    &.reclamacoesbr {
-      @include image-background('../images/reclamacoesbr.png');
-    }
-    &.rodoviasbr {
-      @include image-background('../images/rodoviasbr.png');
-    }
-    &.alugator {
-      @include image-background('../images/alugator.png');
-    }
-  }
 
-  .description {
-    font-family: Georgia, "Cambria", serif;
-    color: #444;
-    line-height: 1.8em;
-  }
+    p {
+      text-align: justify;
+    }
 
-  .meta {
-    display: inline-block;
-    color: #999;
-    font-size: 90%;
-    margin: 0;
+    .avatar {
+      width: 100px;
+      height: 60px;
+      float: right;
+      margin-left: 1em;
+      &.pucrs {
+        background: url(../images/pucrs.png) no-repeat top right;
+        background-size: 100px auto;
+      }
+      &.dell {
+        background: url(../images/dell.png) no-repeat top right;
+        background-size: 60px 60px;
+      }
+      &.tw {
+        background: url(../images/tw.png) no-repeat top right;
+        background-size: 100px auto;
+      }
+    }
 
-    &.shift-right {
-      margin-right: 20px;
+    figure {
+      img {
+        width: 100%;
+        height: auto;
+        max-width: 200px;
+        box-shadow: 2px 2px #40aabf;
+      }
+    }
+
+    .details {
+      padding: 0 15px;
+    }
+
+    .description {
+      font-family: Georgia, "Cambria", serif;
+      color: #444;
+      line-height: 1.8em;
+    }
+
+    .meta {
+      display: inline-block;
+      color: #999;
+      font-size: 90%;
+      margin: 0;
+
+      &.shift-right {
+        margin-right: 20px;
+      }
     }
   }
 }
