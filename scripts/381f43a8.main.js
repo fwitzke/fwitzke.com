@@ -1,1 +1,0 @@
-"use strict";var app=angular.module("witzke",[]);app.controller("ExperienceCtrl",["$scope","$http",function(a,b){a.experiences=[],b.get("experiences.json").success(function(b){a.experiences=b})}]);

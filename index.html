@@ -14,10 +14,32 @@
     <link rel="stylesheet" href="bower_components/pure/pure-min.css">
     <link rel="stylesheet" href="bower_components/pure/grids-min.css">
     <link rel="stylesheet" href="bower_components/pure/grids-responsive-min.css">
-    <link rel="stylesheet" href="bower_components/hint.css/hint.min.css">
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
 
-    <link rel="stylesheet" href="styles/0d28bc8a.main.css"/>
+    <link rel="stylesheet" href="styles/cc8c9d1e.main.css"/>
+
+    <script>
+    /*!
+    loadCSS: load a CSS file asynchronously.
+    [c]2014 @scottjehl, Filament Group, Inc.
+    Licensed MIT
+     */
+    function loadCSS( href, before, media ){
+      "use strict";
+      var ss = window.document.createElement( "link" );
+      var ref = before || window.document.getElementsByTagName( "script" )[ 0 ];
+      ss.rel = "stylesheet";
+      ss.href = href;
+      ss.media = "only x";
+      ref.parentNode.insertBefore( ss, ref );
+      setTimeout( function(){
+        ss.media = media || "all";
+      });
+      return ss;
+    }
+
+    loadCSS("//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css");
+    loadCSS("bower_components/hint.css/hint.min.css");
+    </script>
   </head>
   <body>
     <!--[if lt IE 10]>
@@ -327,13 +349,10 @@
       e=o.createElement(i);r=o.getElementsByTagName(i)[0];
       e.src='//www.google-analytics.com/analytics.js';
       r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-      ga('create','UA-45949472-1');ga('send','pageview');
+
+      if (/fwitzke\.com/.test(document.location.hostname)) {
+        ga('create','UA-45949472-1');ga('send','pageview');
+      }
     </script>
-
-    <script src="scripts/vendor/3a6c28f6.modernizr.js"></script>
-    <script src="bower_components/angular/angular.min.js"></script>
-    <script src="bower_components/underscore/underscore-min.js"></script>
-
-    <script src="scripts/381f43a8.main.js"></script>
 </body>
 </html>
