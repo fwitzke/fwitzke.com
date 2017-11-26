@@ -1,8 +1,6 @@
-node_modules
 dist
 .DS_Store
 *.swp
 **/*.swp
 .tmp
 .sass-cache
-app/bower_components
